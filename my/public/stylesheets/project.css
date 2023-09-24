@@ -1,0 +1,58 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    height: 100vh;
+}
+.tableContainer{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.dContainer{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 55%;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+}
+.dBox{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+.tableBox{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+.headingBox{
+    width: 100%;
+    height: 7%;
+    padding: 10px;
+    background: #1abc9c;
+}
+.headingText{
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1;
+    padding: 2px;
+    color: #fff;
+}
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

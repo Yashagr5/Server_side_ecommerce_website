@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/stylesheets/project.css" />
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/login.css" />
+
+</head>
+
+<body>
+  <form action="/admin/check_admin_login" method="post">
+    <div class="maincontainer">
+      <div class="box" style="border-radius: 7px;">
+        <div class="row">
+          <div class="col s12 align">
+            <img src="\images\login2.jpg" alt="" class="">
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="emailid" name="emailid" type="text" class="validate">
+              <label for="email">Email/Mobile</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">lock_outline</i>
+                <input id="password" name="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+
+              <div class="row">
+                <div class="col s12">
+                  <button class="btn waves-effect waves-light button" type="submit" name="action">LOGIN
+                  </button>
+                </div>
+              </div>
+              <%if(status){%>
+                <div class="row">
+                  <div class="col s12">
+                    <%=message%>
+                  </div>
+                </div>
+                <%}%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+</body>
+
+</html>

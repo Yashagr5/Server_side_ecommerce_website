@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentdashboard</title>
+    <link rel="stylesheet" href="/stylesheets/dashboard.css">
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="product-name">
+            <h1>Product</h1>
+        </div>
+        <div style="display:flex; justify-content:center;">
+            <!-- <img src="/images/user.png" alt="" width="40px" height="40px">-->
+            <img src="/images/<%=admin.picture%>" alt="" width="40px" height="40px">
+        </div>
+        <div style="display:flex; justify-content:center; font-size: 20px; margin-top: 5px;">
+            <%=admin.adminname%>
+        </div>
+        <a>
+            <li style=" margin-top: 5px;">Dashboard</li>
+            <a href="/product/product">
+                <li>Productinterface</li>
+            </a>
+            <a href="/product/display_all_products">
+                <li>Displayproduct</li>
+            </a>
+            <!-- <li>Settings</li> -->
+            <a href="/admin/adminlogout">
+                <li>Logout</li>
+            </a>
+            </ul>
+    </div>
+    <div class="container" style="background-color: #34495e;">
+        <!-- <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="search..">
+                    <button type="submit"><img src="/images/search.jpg" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add new</a>
+                    <img src="/images/notification.png" alt="">
+                    <div class="img-case">
+                        <img src="/images/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="icon-case">
+                        <img src="/images/category.png" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="box">
+                        <h3>Category</h3>
+                        <h1>
+                            <%=result[0][0].countcategory%>
+                        </h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-case">
+                        <img src="/images/product.png" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="box">
+                        <h3>Products</h3>
+                        <h1>
+                            <%=result[1][0].countproducts%>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon-case">
+                        <img src="/images/brand.jpg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="box">
+                        <h3>Brands</h3>
+                        <h1>
+                            <%=result[2][0].countbrands%>
+                        </h1>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon-case">
+                        <img src="/images/stock.png" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="box">
+                        <h3>Stocks</h3>
+                        <h1>
+                            <%=result[1][0].countstock%>
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            style="display:flex; justify-content:center; align-items:center;margin-top: 0px; height: 75vh; width: 85vw; position: relative; ">
+            <iframe src="/product/display_all_products" frameborder="0" style="width:85%; height:66vh;" name="mw">
+
+            </iframe>`
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
